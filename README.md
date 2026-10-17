@@ -1,9 +1,9 @@
 
-#  Sistema de Gestión de Productos – Minimar
+## # Sistema de Gestión de Productos – Minimar
 **Asignatura:** Programación III  
 **Proyecto:** Hito 3 – Evaluación práctica  
 **Arquitectura:** Frontend PHP + API REST Quarkus + MySQL Docker
-## 1. Descripción
+### 1. Descripción
 Sistema para administrar los productos de un minimarket mediante una arquitectura de servicios independientes.
 Permite:
 - Consultar productos activos.
@@ -11,7 +11,7 @@ Permite:
 - Editar información de productos.
 - Eliminar productos lógicamente sin borrarlos de MySQL.
 
-## 2. Tecnologías utilizadas
+### 2. Tecnologías utilizadas
 | Componente | Tecnología |
 |---|---|
 | Backend | Java 25 y Quarkus 3 |
@@ -19,7 +19,7 @@ Permite:
 | Base de datos | MySQL 8.4 |
 | Contenedores | Docker Compose |
 | Compilación | Maven Wrapper |
-## 3. Arquitectura del sistema
+### 3. Arquitectura del sistema
 ```text
 ┌───────────────────────────┐
 │ FRONTEND PHP              │
@@ -43,7 +43,7 @@ Permite:
 ```
 El frontend consume exclusivamente la API REST, sin realizar conexiones directas a MySQL.
 
-## 4. Estructura del proyecto
+### 4. Estructura del proyecto
 
 ```text
 minimarket_hito3/
@@ -68,7 +68,7 @@ minimarket_hito3/
 └── README.md
 ```
 
-## 5. Requisitos previos
+## #5. Requisitos previos
 
 - Java 25.
 - Docker Desktop funcionando.
@@ -77,7 +77,7 @@ minimarket_hito3/
 
 Maven Wrapper está incluido en el backend.
 
-## 6. Instalación y ejecución
+### 6. Instalación y ejecución
 
 ### Paso 1. Clonar el proyecto
 
@@ -156,7 +156,7 @@ Desde la carpeta `backend`:
 
 El resultado esperado es `BUILD SUCCESS`.
 
-## 7. Endpoints de la API REST
+### 7. Endpoints de la API REST
 
 | Método | Endpoint | Función |
 |---|---|---|
@@ -167,7 +167,7 @@ El resultado esperado es `BUILD SUCCESS`.
 
 La API utiliza JSON para intercambiar información.
 
-## 8. Base de datos
+### 8. Base de datos
 
 **Base de datos:** `db_minimarket_pro413`  
 **Tabla:** `Producto`
@@ -186,7 +186,7 @@ Los precios y el stock deben ser mayores o iguales a cero.
 
 El valor `eliminado = 0` identifica un producto activo y `eliminado = 1` identifica uno eliminado lógicamente.
 
-## 9. Pruebas realizadas
+### 9. Pruebas realizadas
 
 - Registro de Leche PIL con precio Bs 12,50 y stock 20.
 - Actualización del precio a Bs 15,00 y stock a 30.
@@ -196,7 +196,7 @@ El valor `eliminado = 0` identifica un producto activo y `eliminado = 1` identif
 - Validaciones HTTP 400 para precio negativo, stock negativo y nombre vacío.
 - Compilación del backend con `BUILD SUCCESS`.
 
-## 10. Seguridad
+### 10. Seguridad
 
 El archivo `.env` almacena las contraseñas locales y está excluido del repositorio mediante `.gitignore`.
 
@@ -204,7 +204,7 @@ El archivo `.env.example` contiene únicamente valores de ejemplo.
 
 La contraseña del backend se obtiene mediante la variable de entorno `DB_PASSWORD`.
 
-## 11. Autoría
+### 11. quien lo iso suiiiiiiii
 
 **Estudiante:** Rosmery Quispe Mamani  
 **Asignatura:** Programación III  
