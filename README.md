@@ -1,14 +1,10 @@
 
-# 🛒 Sistema de Gestión de Productos – Minimarket
-
+#  Sistema de Gestión de Productos – Minimar
 **Asignatura:** Programación III  
 **Proyecto:** Hito 3 – Evaluación práctica  
 **Arquitectura:** Frontend PHP + API REST Quarkus + MySQL Docker
-
 ## 1. Descripción
-
 Sistema para administrar los productos de un minimarket mediante una arquitectura de servicios independientes.
-
 Permite:
 - Consultar productos activos.
 - Registrar nuevos productos.
@@ -16,7 +12,6 @@ Permite:
 - Eliminar productos lógicamente sin borrarlos de MySQL.
 
 ## 2. Tecnologías utilizadas
-
 | Componente | Tecnología |
 |---|---|
 | Backend | Java 25 y Quarkus 3 |
@@ -24,9 +19,7 @@ Permite:
 | Base de datos | MySQL 8.4 |
 | Contenedores | Docker Compose |
 | Compilación | Maven Wrapper |
-
 ## 3. Arquitectura del sistema
-
 ```text
 ┌───────────────────────────┐
 │ FRONTEND PHP              │
@@ -48,7 +41,6 @@ Permite:
 │ db_minimarket_pro413      │
 └───────────────────────────┘
 ```
-
 El frontend consume exclusivamente la API REST, sin realizar conexiones directas a MySQL.
 
 ## 4. Estructura del proyecto
@@ -217,4 +209,4 @@ La contraseña del backend se obtiene mediante la variable de entorno `DB_PASSWO
 **Estudiante:** Rosmery Quispe Mamani  
 **Asignatura:** Programación III  
 **Proyecto:** Sistema de Gestión de Productos de un Minimarket
-Mejorar formato y documentación del README
+
