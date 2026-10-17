@@ -1,5 +1,5 @@
 
-## # Sistema de Gestión de Productos – Minimar
+### Sistema de Gestión de Productos – Minimar
 **Asignatura:** Programación III  
 **Proyecto:** Hito 3 – Evaluación práctica  
 **Arquitectura:** Frontend PHP + API REST Quarkus + MySQL Docker
